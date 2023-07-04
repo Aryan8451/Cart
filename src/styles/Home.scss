@@ -1,0 +1,46 @@
+@import "colors";
+
+.Home{
+ padding: 2rem;
+ display: flex;
+ justify-content: center;
+}
+.productCard{
+ background-color: $tertiary;
+ width: 200px;
+ margin: 2rem;
+ border-radius: 5px;
+ padding: 2rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ transition: all 0.5s;
+ 
+ img{
+    width: 143px;
+    height: 159px;
+    object-fit: contain;
+ }
+ h4{
+    margin: 1rem;
+    color: black;
+    
+ }
+ button{
+    cursor: pointer;
+    background-color: $secondary;
+    border: none;
+    padding: 1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    border-radius: 10px;
+    transition: all 0.3s ;
+    &:hover{
+        background-color: $secondarydark;
+        
+    }
+ }
+ &:hover{
+    transform: scale(1.1);
+}
+}
